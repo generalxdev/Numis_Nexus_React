@@ -1,0 +1,146 @@
+.body {
+    font-family: var(--e-global-typography-primary-font-family),Sans-serif;
+}
+/* _lg */
+@media only screen and (max-width: 1440px) {
+    .listingContent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* _md */
+@media only screen and (max-width: 1020px) {
+    .Aboutus {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .AboutusItem {
+        width: 80% !important;
+        margin: auto;
+    }
+
+    .card{
+        width: 100% !important;
+    }
+
+    .listingContent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* _sm */
+@media only screen and (max-width: 840px) {
+    .listingContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accordion {
+      width: 90% !important;
+    }
+
+    .panel {
+      width: 90% !important;
+    }
+
+    .CTAimg {
+      max-width:100%;
+      max-height:100%;
+      width: auto;
+      height: auto;
+    }
+}
+
+/* _mobile */
+@media only screen and (max-width: 500px) {
+    .listingContent {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    margin: 15px 0;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.cardheader {
+    padding: 10px;
+}
+
+.cardcontainer {
+    padding: 10px;
+}
+
+.cardheader p{
+    font-size:16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+/* Overlay */
+ .container {
+    position: relative;
+    height: 220px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,120,255,0.4); */
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .accordion {
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    width: 600px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 18px;
+    background-color: #666;
+    /* max-height: 100px; */
+    width: 600px;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    /* content: '\02795'; Unicode character for "plus" sign (+) */
+    content: '>';
+    font-size: 25px;
+    color: white;
+    float: right;
+    margin-left: 20px;
+  }
+  
+  .active:after {
+    margin-left: 20px;
+    font-size: 22px;
+    content: '∨'; /* Unicode character for "minus" sign (-) */
+  }
+  
+  .body {
+    font-family: var(--e-global-typography-primary-font-family),Sans-serif;
+}
